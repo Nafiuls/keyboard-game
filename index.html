@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet games keyboard</title>
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisi ui link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="min-h-screen bg-blue-950  bg-no-repeat bg-center">
+        <!-- play section -->
+        <section id="home" class="">
+            <div class="min-h-screen flex flex-col justify-center items-center space-y-5">
+                <h1 class="text-9xl text-white poppins text-center font-extrabold "> ALPHABET CLASH</h1>
+                <p class="text-white text-center text-2xl">Unleash Your Keyboard Kung Fu : press "Enter" to Start</p>
+                <button id="start" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Play Now</button>
+
+
+            </div>
+        </section>
+
+        <!-- play ground -->
+        <section id="playground" class="min-h-screen flex flex-col justify-center items-center hidden">
+            <!-- playground container -->
+            <div class="space-y-20">
+                <!-- playground screen -->
+                <div>
+                    <div
+                        class="artboard artboard-horizontal phone-6 rounded-2xl bg-[#ffffffcc] text-center border-8 border-blue-500 flex justify-center items-center text-7xl font-bold">
+                        y</div>
+                </div>
+                <!-- playground screen end -->
+                <!--  -->
+                <!--  -->
+                <!-- playground keyboard -->
+                <div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                    </div>
+                </div>
+                <!-- playground keyboard end -->
+                <!--  -->
+                <!--  -->
+                <!-- playground buttons -->
+                <div class="flex justify-between">
+                    <button class="bg-purple-800 text-white px-7 py-2 rounded-full">
+                        Life
+                        <i class="fa-solid fa-heart-circle-plus"></i>
+                    </button>
+
+                    <button class="bg-blue-700 text-white px-7 py-2 rounded-full">
+                        Score
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- playground ends -->
+
+        <!-- play score section -->
+        <section class="flex justify-center items-center min-h-screen hidden">
+            <div class="text-center text-white space-y-6 bg-[#ffffff33] p-4 rounded-xl">
+                <h1 class="text-8xl">
+                    <span>Score :</span>
+                    <span>14</span>
+                </h1>
+                <button class="bg-white text-black px-5 py-3 rounded-lg text-xl">Play again</button>
+                <p class="text-xl">Practice makes you perfect</p>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <!-- java script file  -->
+    <script src="index.js"></script>
+</body>
+
+</html>
